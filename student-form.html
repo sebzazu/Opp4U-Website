@@ -1,0 +1,68 @@
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 100px 50px 50px 50px;
+  }
+  h1 {
+    color: rgb(7, 3, 23);
+    text-align: center;
+  }
+  label {
+    display: block;
+    color: rgb(33, 6, 6);
+    text-align: center;
+  }
+  form {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 40%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  input[type="text"], input[type="password"], input[type="email"] {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 20px;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"]:hover {
+    background-color: darkred;
+  }
+</style>
+</head>
+<body>
+
+<h1>Input and Submit Information</h1>
+<form action="connect-students.php" method="post">
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="phone">Phone Number:</label><br>
+  <input type="text" id="phone" name="phone"><br>
+  <label for="school">School:</label><br>
+  <input type="text" id="school" name="school"><br>
+  <label for="year">Year/Grade:</label><br>
+  <input type="text" id="year" name="year"><br>
+  <label for="age">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob"><br>
+  <label for="sport">Sport:</label><br>
+  <input type="text" id="sport" name="sport"><br><br>
+  <input type="submit" value="Submit">
+</form> 

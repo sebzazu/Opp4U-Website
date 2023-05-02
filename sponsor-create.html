@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 100px 50px 50px 50px;
+    }
+    h1 {
+      color: rgb(7, 3, 23);
+      text-align: center;
+    }
+    label {
+      display: block;
+      color: rgb(33, 6, 6);
+      text-align: center;
+    }
+    form {
+      margin: auto;
+      width: 50%;
+      text-align: center;
+    }
+    input[type="submit"] {
+      background-color: red;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 40%;
+    height: 33px;
+      display: block;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      height: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"]:hover {
+      background-color: darkred;
+    }
+</style>
+</head>
+<body>
+  <h1>Sponsor Registration</h1>
+  <form onsubmit="return validateForm()" action="connect-sponsors.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" id="confirmpassword" name="confirmpassword"><br>
+    <label for="companyname">Company Name:</label>
+    <input type="text" id="companyname" name="companyname"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="sport1">Sport 1:</label>
+    <input type="text" id="sport1" name="sport1"><br>
+    <label for="sport2">Sport 2:</label>
+    <input type="text" id="sport2" name="sport2"><br>
+    <label for="sport3">Sport 3:</label>
+    <input type="text" id="sport3" name="sport3"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm(){
+      var password = document.getElementById('password').value;
+      var passwordConfirm = document.getElementById('confirmpassword').value;
+
+      if (password == passwordConfirm){
+        return true;
+      }
+      else{
+        alert("Unable to Submit, Passwords do not Match!");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>

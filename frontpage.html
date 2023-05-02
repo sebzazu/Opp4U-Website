@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+/* Add a red background color to the active/current link */
+.w3-bar-item.w3-white {
+  background-color: #ddd !important;
+}
+
+/* Add a hover effect to the links */
+.w3-bar-item:hover {
+  background-color: gray;
+  color: #000 !important;
+}
+/* Set the color of the active link to white */
+.w3-bar-item.w3-red {
+		  background-color: #fff !important;
+		  color: #000 !important;
+}
+  .w3-bar-item {
+    padding: 11px 15px;
+    font-size: 17px;
+  }
+</style>
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="frontpage.html" class="w3-bar-item w3-button w3-padding-large w3-red">Home</a>
+    <a href="student-form.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Athletes Submit Your Information</a>
+    <a href="sponsor-create.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sponsor Account Creation</a>
+    <a href="opp4uAthletes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Student-Athletes Using OPP4U</a>
+    <a href="sponsor-login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sponsor Login</a> 
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="OPP4U.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="student-form.html" class="w3-bar-item w3-button w3-padding-large">Submit Your Information (Athletes)</a>
+    <a href="sponsor-create.html" class="w3-bar-item w3-button w3-padding-large">Create An Account (Sponsors)</a>
+    <a href="opp4uAthletes.html" class="w3-bar-item w3-button w3-padding-large">Student-Athletes Using OPP4U</a>
+    <a href="sponsor-login.html" class="w3-bar-item w3-button w3-padding-large">Login (Sponsors)</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">OPP4U</h1>
+  <p class="w3-xlarge">Run by Student-Athletes, for Student-Athletes</p>
+  <a href="student-form.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Athletes</button></a>
+  <a href="sponsor-create-login.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Sponsors</button></a>
+</header>
+
+  
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Our Mission</h1>
+        <h5 class="w3-padding-32">OPP4U's mission is to connect collegiate athletes of all sports and backgrounds with brands and business for brand deals and sponsorships.</h5>
+  
+        <p class="w3-text-grey">It all started in June 2021 when the NCAA allowed athletes to profit off of their NIL (Name, Image, Likeness).  Prior to the new NIL laws, athletes were prohibited from profiting off of their NIL while playing for their college. With NIL laws now in place, athletes can negotiate sponsorships and endorsement deals, receive compensation for social media promotions, and monetize their personal brands. This process is not easy for all athletes because players at big name schools (ex: Alabama Football) typically have managers and support teams.  This is a far different experience for, say, a softball player at a smaller Divison 1 program.  This is where OPP4U comes in.  We want to level the playing field for all athletes, so they can get the sponsorship they deserve  
+        </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="https://imgur.com/5W0ZTvX.jpg" alt="Our Logo" style="width:500px; height:auto;">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <img src="https://imgur.com/zaqNj5Y.jpg" alt="Our Logo" style="width:300px; height:auto; margin-left: -50px;">
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>How It Works</h1>
+        <h5 class="w3-padding-32"> A seamless approach for the busy user</h5>
+  
+        <p class="w3-text-grey"><em><b><i>Student-athletes</i></b></em> enter their basic information into our <a href="student-form.html">database</a>..  Using this information, sponsors reach out to these athletes if they are a good fit for the sponsor's brand.  <em><b><i>Prospective Sponsors</i></b></em> can create an account <a href="your_file_path_here.html">here</a>..  This approach is simple, and everyone gets what their looking for.  Athletes get exposure they otherwise wouldn't be getting.  Sponsors get a list of possible suitors to promote their brand.</p>
+      </div>
+    </div>
+  </div> 
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.instagram.com/opp4unetwork/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.tiktok.com/@opp4u.net">
+      <i class="fa-tiktok"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/opp4u/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
